@@ -1,0 +1,316 @@
+/* ! If you change variable colors please change in theme.json too */
+
+:root {
+  --HSBCWhite: #fff;
+  --HSBCPearl: #fdfdfd;
+  --HSBCRed: #db0011;
+  --HSBCDarkRed: #83000a;
+  --HSBCJade: #008580;
+  --HSBCGold: #e9a115;
+  --HSBCGrey: #929292;
+  --HSBCLightGrey: #d7d8d6;
+  --HSBCDarkSlate_20Black: #1d262c;
+  --HSBCDarkSlate: #253038;
+  --HSBCSlate_20Black: #31404a;
+  --HSBCSlate: #3e505d;
+  --HSBCSlate_15White: #5a6a75;
+  --HSBCLightSlate: #677b88;
+  --HSBCGreen: #588942;
+}
+
+@font-face {
+  font-family: "HSBC Font";
+  src: url("./UniversNextforHSBCW01-Rg.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ---Sheet style */
+.qvt-sheet {
+  /* background: var(--HSBCSlate_20Black) !important; */
+  background-image: linear-gradient(
+    180deg,
+    var(--HSBCDarkSlate) max(10.5rem, 15.9%),
+    var(--HSBCSlate_20Black) 1%
+  ) !important;
+}
+
+.qv-object * {
+  font-family: "HSBC Font", Arial;
+}
+
+.qva-chart-data-title * {
+  font-weight: bold;
+}
+
+.cl-title {
+  font-weight: bold;
+}
+
+/* -- Styling toolbar -- */
+.qv-panel-sheet .sheet-title-container {
+  border-top: 5px solid var(--HSBCRed);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%);
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+/* -- Styling toolbar tabs-- */
+.lui-tab.lui-active,
+.lui-tab.lui-focused,
+.lui-tab:focus {
+  background-color: var(--HSBCDarkSlate_20Black);
+  border-bottom: 2px solid var(--HSBCRed);
+}
+
+.lui-tab__text {
+  color: var(--HSBCLightSlate) !important;
+}
+
+/* .lui-active > .lui-tab__text {
+  color: var(--HSBCDarkSlate_20Black) !important;
+} */
+
+/* -- Styling "next Sheet" Button in toolbar -- */
+button[tid="btnQuickNavNext"] {
+  color: var(--HSBCRed);
+  background: var(--HSBCPearl);
+}
+
+/* -- Styling "previous Sheet" Button in toolbar -- */
+button[tid="btnQuickNavPrevious"] {
+  color: var(--HSBCRed);
+  background: var(--HSBCLightGrey);
+}
+
+button[tid="4e25a2"],
+button[tid="4dd782"],
+button[tid="4e4ab2"],
+button[tid="2f7a7e"] {
+  color: var(--HSBCLightSlate) !important;
+  border: 1px solid var(--HSBCLightSlate);
+}
+
+span[data-tid="toolbar-app-title"],
+button[data-tid="toggle-app-details"] {
+  color: var(--HSBCLightSlate) !important;
+}
+
+/*  ---Header bar style */
+.qs-header {
+  background: var(--HSBCDarkSlate);
+}
+
+/* ---styling the cards */
+
+/* article[tid="qv-object-barchart"] {
+  border-top: 5px solid var(--HSBCRed);
+  padding-bottom: 5px;
+} */
+
+/* Styling the card header */
+.qv-object .qv-object-title {
+  padding: 10px 0 !important;
+  background: var(--HSBCDarkSlate_20Black);
+}
+
+.qv-object .qv-object-title .qv-object-title-text {
+  padding-left: 5px;
+}
+
+.qv-object-table .qv-object-header,
+.qv-object-pivot-table .qv-object-header {
+  padding-left: 0;
+}
+
+/* -- Adding a image to the header -- */
+.sheet-title-logo-img img {
+  content: url("./HSBC_Logo_2018_white_small.png");
+}
+
+/* -- List box styles */
+.qv-collapsed-listbox .title-wrapper {
+  background-color: var(--HSBCDarkSlate_20Black);
+}
+
+.qv-collapsed-listbox .title-wrapper .title {
+  color: var(--HSBCPearl);
+}
+
+/* Color the button for mutiple dimension or measures */
+.qva-dropdown-data-title .dropdown-data-title-wrapper.interactive {
+  background: var(--HSBCDarkSlate_20Black);
+}
+
+.qv-collapsed-listbox,
+.qv {
+  border: 2px solid var(--HSBCGreen);
+}
+
+.qv-collapsed-listbox.interactive:hover {
+  border: 2px solid #58894280;
+}
+
+.qv-object-listbox .qv-object-title .qv-object-search {
+  color: var(--HSBCPearl) !important;
+}
+
+/* Dimension label color */
+article[tid="qv-object-piechart"]
+  :is(.lui-fade-button, .lui-icon--select-alternative) {
+  color: var(--HSBCGrey) !important;
+}
+
+/* The drop down arrow for alternative measures or dimensions */
+.dropdown-arrow {
+  border-top: 5px solid var(--HSBCGrey) !important;
+}
+
+/* Temp fix in April 2019 as you cant change the title color - delete new version */
+article[tid="qv-object-kpi"] :is(.measure-title) {
+  color: var(--HSBCPearl);
+}
+
+/* Pivot table buttons */
+article[tid="qv-object-pivot-table"] :is(.lui-button) {
+  background: var(--HSBCDarkSlate_20Black) !important;
+  color: var(--HSBCPearl);
+}
+
+article[tid="qv-object-pivot-table"] :is(.lui-icon--plus, .lui-icon--minus) {
+  color: var(--HSBCPearl) !important;
+}
+
+.qv-pt .cell.null-value {
+  background: none;
+}
+
+.qv-object-content-container .qv-object-content .qv-pt tr {
+  background: var(--HSBCDarkSlate_20Black) !important;
+}
+
+.qv-object-content-container .qv-object-content tr[tid="header.row"] {
+  background: var(--HSBCSlate) !important;
+}
+
+/* Straight table css */
+.touch-off
+  .qv-st-interactive:not(.qv-st-selections-active):not(.qv-st-reordering-active)
+  .qv-st-header:not(.qv-st-custom-header)
+  .qv-st-header-cell-search:hover:not(:active):not(.qv-st-header-cell-search-open),
+.touch-off
+  .qv-st-navigatable:not(.qv-st-selections-active):not(.qv-st-reordering-active)
+  .qv-st-header-sortable:not(.qv-st-custom-header):hover:not(:active):not(.qv-st-header-cell-search-open) {
+  background-color: var(--HSBCDarkSlate);
+  cursor: pointer;
+}
+
+th[tid="st.header"],
+th[tid="st.header.search"] {
+  padding: 10px 0;
+  background: var(--HSBCSlate);
+}
+
+th[tid="st.total"] {
+  padding: 5px 0;
+  background: var(--HSBCSlate);
+}
+
+.qv-st table {
+  background: var(--HSBCDarkSlate_20Black);
+}
+
+.qv-st-data-cell-null-value {
+  background: none;
+}
+
+/* Arrow for the table - up and down */
+
+.qv-st-sorting-indicator {
+  bottom: -0.68461538em;
+  color: var(--HSBCPearl);
+}
+
+/* Scroll thumb */
+.scrollbar-thumb,
+.scrollbar-thumb .active {
+  background: #fdfdfd4d !important;
+}
+
+.scrollbar-thumb:hover {
+  background: #fdfdfd80 !important;
+}
+
+/* Hide the expand button */
+a[title="Full screen"],
+a[title="Take snapshot"] {
+  display: none;
+}
+
+/* Climber table */
+
+article[tid="qv-object-cl-custom-report"] {
+  color: var(--HSBCPearl);
+}
+
+article[tid="qv-object-cl-custom-report"]
+  :is(.lui-list .lui-list__item, .select) {
+  color: var(--HSBCPearl);
+  background: var(--HSBCDarkSlate_20Black);
+}
+
+/* Styling the climber selection fields */
+article[tid="qv-object-cl-horizontalselectionbar"]
+  :is(.container-label, .pull-right) {
+  color: var(--HSBCPearl);
+  background: var(--HSBCDarkSlate) !important;
+}
+
+.qv-object-cl-horizontalselectionbar .lui-button.A {
+  color: #fdfdfdb3 !important;
+  background: var(--HSBCDarkSlate) !important;
+}
+
+.qv-object-cl-horizontalselectionbar .lui-button.O {
+  color: #fdfdfd !important;
+  background: var(--HSBCDarkSlate) !important;
+}
+
+/* Border raduis of the cards */
+.qv-inner-object,
+.qv-object-grouped_container > .qv-inner-object {
+  border-radius: 5px !important;
+}
+
+/*Styling the datepicker  */
+.daterangepicker .calendar-table {
+  background: var(--HSBCDarkSlate_20Black) !important;
+  color: var(--HSBCPearl);
+  border: none !important;
+}
+
+.daterangepicker {
+  color: var(--HSBCPearl) !important;
+}
+
+.daterangepicker.dropdown-menu {
+  background: var(--HSBCDarkSlate_20Black) !important;
+}
+
+.ranges li {
+  background: var(--HSBCSlate_20Black) !important;
+  color: var(--HSBCPearl) !important;
+}
+
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover {
+  color: var(--HSBCGrey) !important;
+}
+
+.daterangepicker .input-mini {
+  background: var(--HSBCDarkSlate_20Black) !important;
+  color: var(--HSBCPearl) !important;
+}
+
+.daterangepicker td.off {
+  background: none !important;
+}

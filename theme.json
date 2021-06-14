@@ -1,0 +1,1362 @@
+{
+    "_cards": false,
+    "_inherit": false,
+    "_variables": {
+        "@default": "@HSBCPearl",
+        "@font-family": "HSBC Font",
+        "@background-color": "@HSBCDarkSlate",
+        "@text-size": "12px",
+        "@footer-background-color": "@HSBCDarkSlate",
+        "@title-size": "15px",
+        "@title-color": "@HSBCPearl",
+        "@subtitle-size": "13px",
+        "@subtitle-color": "@HSBCLightSlate",
+        "@footer-size": "10px",
+        "@footer-color": "@HSBCLightSlate",
+        "@chart-title-size": "13px",
+        "@chart-title-color": "@HSBCGrey",
+        "@chart-label-size": "14px",
+        "@chart-label-color": "@HSBCPearl",
+        "@label-value-color": "@HSBCPearl",
+        "@label-value-size": "12px",
+        "@legend-title-size": "13px",
+        "@legend-title-color": "@HSBCGrey",
+        "@legend-label-color": "@HSBCPearl",
+        "@legend-label-size": "12px",
+        "@ListBoxFontSize": "9px",
+        "@AxisMajorColor": "@HSBCLightSlate",
+        "@AxisMinorColor": "@HSBCLightSlate",
+        "@referenceColor": "@HSBCRed",
+        "@HSBCRed": "#db0011",
+        "@HSBCDarkRed": "#83000a",
+        "@HSBCPearl": "#fdfdfd",
+        "@HSBCJade": "#008580",
+        "@HSBCGold": "#e9a115",
+        "@HSBCGrey": "#929292",
+        "@HSBCLightGrey": "#d7d8d6",
+        "@HSBCDarkSlate_20Black": "#1D262C",
+        "@HSBCDarkSlate": "#253038",
+        "@HSBCSlate_20Black": "#31404A",
+        "@HSBCSlate": "#3E505D",
+        "@HSBCSlate_15White": "#5A6A75",
+        "@HSBCLightSlate": "#677B88"
+    },
+    "customStyles": [
+        {
+            "cssRef": "theme.css",
+            "classRef": "cme-theme"
+        }
+    ],
+    "color": "@default",
+    "fontSize": "@text-size",
+    "fontFamily": "@font-family",
+    "backgroundColor": "@background-color",
+    "object": {
+        "title": {
+            "main": {
+                "color": "@title-color",
+                "fontSize": "@title-size",
+                "fontFamily": "@font-family"
+            },
+            "subTitle": {
+                "color": "@subtitle-color",
+                "fontSize": "@subtitle-size",
+                "fontFamily": "@font-family"
+            },
+            "footer": {
+                "color": "@footer-color",
+                "fontSize": "@footer-size",
+                "fontFamily": "@font-family",
+                "backgroundColor": "@light"
+            }
+        },
+        "label": {
+            "name": {
+                "color": "@label-value-color",
+                "fontSize": "@font-normal"
+            },
+            "value": {
+                "color": "@label-value-color",
+                "fontSize": "@font-normal"
+            }
+        },
+        "axis": {
+            "title": {
+                "fontSize": "@chart-title-size",
+                "fontFamily": "@font-family",
+                "color": "@chart-title-color"
+            },
+            "label": {
+                "name": {
+                    "color": "@chart-label-color",
+                    "fontSize": "@chart-label-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "line": {
+                "major": {
+                    "color": "@AxisMajorColor"
+                },
+                "minor": {
+                    "color": "@AxisMinorColor"
+                }
+            }
+        },
+        "grid": {
+            "line": {
+                "highContrast": {
+                    "color": "@default"
+                },
+                "major": {
+                    "color": "@AxisMajorColor"
+                },
+                "minor": {
+                    "color": "@AxisMinorColor"
+                }
+            }
+        },
+        "referenceLine": {
+            "label": {
+                "name": {
+                    "color": "@default",
+                    "fontSize": "@text-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "outOfBounds": {
+                "color": "@default",
+                "backgroundColor": "@background-color",
+                "fontSize": "@text-size"
+            }
+        },
+        "legend": {
+            "title": {
+                "color": "@legend-title-color",
+                "fontSize": "@legend-title-size",
+                "fontFamily": "@font-family"
+            },
+            "label": {
+                "color": "@legend-label-color",
+                "fontSize": "@legend-label-size",
+                "fontFamily": "@font-family"
+            }
+        },
+        "barChart": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family",
+                    "color": "@chart-title-color"
+                },
+                "label": {
+                    "name": {
+                        "color": "@chart-label-color",
+                        "fontSize": "@chart-label-size",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@AxisMajorColor"
+                    },
+                    "minor": {
+                        "color": "@AxisMinorColor"
+                    }
+                }
+            },
+            "legend": {
+                "title": {
+                    "color": "@legend-title-color",
+                    "fontSize": "@legend-title-size",
+                    "fontFamily": "@font-family"
+                },
+                "label": {
+                    "color": "@legend-label-color",
+                    "fontSize": "@legend-label-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "label": {
+                "value": {
+                    "color": "@label-value-color",
+                    "fontSize": "@label-value-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "outOfRange": {
+                "color": "@default"
+            }
+        },
+        "boxPlot": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family",
+                    "color": "@chart-title-color"
+                },
+                "label": {
+                    "name": {
+                        "color": "@chart-label-color",
+                        "fontSize": "@chart-label-size",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@AxisMajorColor"
+                    },
+                    "minor": {
+                        "color": "@AxisMinorColor"
+                    }
+                }
+            },
+            "box": {
+                "whisker": {
+                    "stroke": "@AxisMajorColor"
+                },
+                "line": {
+                    "stroke": "@AxisMajorColor"
+                },
+                "box": {
+                    "fill": "@AxisMajorColor",
+                    "stroke": "@AxisMajorColor"
+                }
+            }
+        },
+        "comboChart": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family",
+                    "color": "@chart-title-color"
+                },
+                "label": {
+                    "name": {
+                        "color": "@chart-label-color",
+                        "fontSize": "@chart-label-size",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@AxisMajorColor"
+                    },
+                    "minor": {
+                        "color": "@AxisMinorColor"
+                    }
+                }
+            },
+            "legend": {
+                "title": {
+                    "color": "@legend-title-color",
+                    "fontSize": "@legend-title-size",
+                    "fontFamily": "@font-family"
+                },
+                "label": {
+                    "color": "@legend-label-color",
+                    "fontSize": "@legend-label-size",
+                    "fontFamily": "@font-family"
+                }
+            }
+        },
+        "distributionPlot": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family",
+                    "color": "@chart-title-color"
+                },
+                "label": {
+                    "name": {
+                        "color": "@chart-label-color",
+                        "fontSize": "@chart-label-size",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@AxisMajorColor"
+                    },
+                    "minor": {
+                        "color": "@AxisMinorColor"
+                    }
+                }
+            },
+            "box": {
+                "fill": "@AxisMajorColor"
+            }
+        },
+        "filterpane": {
+            "backgroundColor": "none",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "none"
+                }
+            }
+        },
+        "gauge": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family",
+                    "color": "@chart-title-color"
+                },
+                "label": {
+                    "name": {
+                        "color": "@chart-label-color",
+                        "fontSize": "@chart-label-size",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@AxisMajorColor"
+                    },
+                    "minor": {
+                        "color": "@AxisMinorColor"
+                    }
+                }
+            },
+            "label": {
+                "value": {
+                    "color": "@label-value-color"
+                }
+            }
+        },
+        "histogram": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family",
+                    "color": "@chart-title-color"
+                },
+                "label": {
+                    "name": {
+                        "color": "@chart-label-color",
+                        "fontSize": "@chart-label-size",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@AxisMajorColor"
+                    },
+                    "minor": {
+                        "color": "@AxisMinorColor"
+                    }
+                }
+            },
+            "label": {
+                "value": {
+                    "color": "@label-value-color",
+                    "fontSize": "@label-value-size"
+                }
+            }
+        },
+        "kpi": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-color",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@background-color"
+                }
+            },
+            "label": {
+                "name": {
+                    "color": "@label-value-color",
+                    "fontFamily": "@font-family"
+                },
+                "value": {
+                    "fontFamily": "@font-family"
+                }
+            }
+        },
+        "lineChart": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family",
+                    "color": "@chart-title-color"
+                },
+                "label": {
+                    "name": {
+                        "color": "@chart-label-color",
+                        "fontSize": "@chart-label-size",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@AxisMajorColor"
+                    },
+                    "minor": {
+                        "color": "@AxisMinorColor"
+                    }
+                }
+            },
+            "legend": {
+                "title": {
+                    "color": "@legend-title-color",
+                    "fontSize": "@legend-title-size",
+                    "fontFamily": "@font-family"
+                },
+                "label": {
+                    "color": "@legend-label-color",
+                    "fontSize": "@legend-label-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "outOfRange": {
+                "color": "@default"
+            },
+            "label": {
+                "value": {
+                    "color": "@label-value-color",
+                    "fontSize": "@label-value-size",
+                    "fontFamily": "@font-family"
+                }
+            }
+        },
+        "listBox": {
+            "backgroundColor": "@HSBCSlate",
+            "title": {
+                "main": {
+                    "color": "@default",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "content": {
+                "color": "@default",
+                "fontSize": "@text-size",
+                "fontFamily": "@font-family"
+            }
+        },
+        "mapChart": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            }
+        },
+        "pieChart": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@background-color"
+                }
+            },
+            "axis": {
+                "title": {
+                    "color": "@chart-title-color",
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "legend": {
+                "title": {
+                    "fontSize": "@legend-title-size",
+                    "fontFamily": "@font-family",
+                    "color": "@legend-title-color"
+                },
+                "label": {
+                    "fontSize": "@legend-label-size",
+                    "fontFamily": "@font-family",
+                    "color": "@legend-label-color"
+                }
+            },
+            "label": {
+                "name": {
+                    "color": "@label-value-color",
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family"
+                },
+                "value": {
+                    "color": "@label-value-color",
+                    "fontSize": "@label-value-size",
+                    "fontFamily": "@font-family"
+                }
+            }
+        },
+        "pivotTable": {
+            "backgroundColor": "@HSBCDarkSlate_20Black",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "header": {
+                "fontSize": "@chart-title-size",
+                "fontFamily": "@font-family",
+                "color": "@default"
+            },
+            "content": {
+                "fontSize": "@text-size",
+                "fontFamily": "@font-family",
+                "color": "@default"
+            }
+        },
+        "scatterPlot": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family",
+                    "color": "@chart-title-color"
+                },
+                "label": {
+                    "name": {
+                        "color": "@chart-label-color",
+                        "fontSize": "@chart-label-size",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@AxisMajorColor"
+                    },
+                    "minor": {
+                        "color": "@AxisMinorColor"
+                    }
+                }
+            },
+            "legend": {
+                "title": {
+                    "color": "@legend-title-color",
+                    "fontSize": "@legend-title-size",
+                    "fontFamily": "@font-family"
+                },
+                "label": {
+                    "color": "@legend-label-color",
+                    "fontSize": "@legend-label-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "label": {
+                "value": {
+                    "color": "@label-value-color",
+                    "fontSize": "@label-value-size",
+                    "fontFamily": "@font-family"
+                }
+            }
+        },
+        "straightTable": {
+            "backgroundColor": "@HSBCDarkSlate_20Black",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "header": {
+                "fontSize": "@chart-title-size",
+                "fontFamily": "@font-family",
+                "color": "@default"
+            },
+            "content": {
+                "fontSize": "@text-size",
+                "fontFamily": "@font-family",
+                "color": "@default"
+            }
+        },
+        "textImage": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            }
+        },
+        "treemap": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "legend": {
+                "title": {
+                    "color": "@legend-title-color",
+                    "fontSize": "@legend-title-size",
+                    "fontFamily": "@font-family"
+                },
+                "label": {
+                    "color": "@legend-label-color",
+                    "fontSize": "@legend-label-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "branch": {
+                "backgroundColor": "@HSBCSlate",
+                "label": {
+                    "color": "@label-value-color",
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "leaf": {
+                "label": {
+                    "fontSize": "@label-value-size",
+                    "fontFamily": "@font-family"
+                }
+            }
+        },
+        "waterfallChart": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "axis": {
+                "title": {
+                    "fontSize": "@chart-title-size",
+                    "fontFamily": "@font-family",
+                    "color": "@chart-title-color"
+                },
+                "label": {
+                    "name": {
+                        "color": "@chart-label-color",
+                        "fontSize": "@chart-label-size",
+                        "fontFamily": "@font-family"
+                    }
+                },
+                "line": {
+                    "major": {
+                        "color": "@AxisMajorColor"
+                    },
+                    "minor": {
+                        "color": "@AxisMinorColor"
+                    }
+                }
+            },
+            "legend": {
+                "title": {
+                    "color": "@legend-title-color",
+                    "fontSize": "@legend-title-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "label": {
+                "value": {
+                    "fontSize": "@label-value-size",
+                    "fontFamily": "@font-family"
+                }
+            },
+            "value": {
+                "color": {
+                    "default": "@default",
+                    "dark": "@HSBCDarkSlate_20Black",
+                    "light": "@default"
+                }
+            },
+            "shape": {
+                "positiveValue": {
+                    "fill": "@default"
+                },
+                "negativeValue": {
+                    "fill": "@HSBCSlate_20Black"
+                },
+                "subtotal": {
+                    "fill": "@HSBCDarkSlate_20Black"
+                },
+                "bridge": {
+                    "stroke": "@HSBCDarkSlate"
+                }
+            }
+        },
+        "cl-custom-report": {
+            "backgroundColor": "@background-color",
+            "title": {
+                "main": {
+                    "color": "@title-color",
+                    "fontSize": "@title-size",
+                    "fontFamily": "@font-family"
+                },
+                "subTitle": {
+                    "color": "@subtitle-color",
+                    "fontSize": "@subtitle-size",
+                    "fontFamily": "@font-family"
+                },
+                "footer": {
+                    "color": "@footer-color",
+                    "fontSize": "@footer-size",
+                    "fontFamily": "@font-family",
+                    "backgroundColor": "@footer-background-color"
+                }
+            },
+            "label": {
+                "value": {
+                    "color": "@label-value-color",
+                    "fontSize": "@label-value-size",
+                    "fontFamily": "@font-family"
+                }
+            }
+        }
+    },
+    "dataColors": {
+        "primaryColor": "@HSBCRed",
+        "othersColor": "@HSBCLightSlate",
+        "errorColor": "@HSBCDarkRed",
+        "nullColor": "@HSBCSlate"
+    },
+    "palettes": {
+        "data": [
+            {
+                "name": "HSBC palette for visualisation",
+                "translation": "HSBC palette for visualisation ",
+                "propertyValue": "data-palette-visualisation",
+                "type": "row",
+                "scale": [
+                    "#6D8EA6",
+                    "#14A5AB",
+                    "#4FA62F",
+                    "#E67310",
+                    "#D71E8D",
+                    "#834EFF",
+                    "#2580DC",
+                    "#4D6474",
+                    "#008580",
+                    "#34880F",
+                    "#BF610F",
+                    "#A8166D",
+                    "#6637D5",
+                    "#1564B5"
+                ]
+            },
+            {
+                "name": "HSBC palette",
+                "translation": "HSBC palette",
+                "propertyValue": "data-palette-1",
+                "type": "row",
+                "scale": [
+                    "#4d6474",
+                    "#3e505d",
+                    "#008580",
+                    "#005e69",
+                    "#e9a115",
+                    "#ba8111",
+                    "#4e3a7c",
+                    "#262362",
+                    "#3b7522",
+                    "#1b3e02",
+                    "#1087ef",
+                    "#0c62ae",
+                    "#DB0011",
+                    "#93000a",
+                    "#404040"
+                ]
+            },
+            {
+                "name": "HSBC palette 13",
+                "translation": "HSBC palette pyramid",
+                "propertyValue": "data-palette-2",
+                "type": "pyramid",
+                "scale": [
+                    [
+                        "#008580"
+                    ],
+                    [
+                        "#008580",
+                        "#376798"
+                    ],
+                    [
+                        "#008580",
+                        "#376798",
+                        "#262362"
+                    ],
+                    [
+                        "#008580",
+                        "#376798",
+                        "#262362",
+                        "#929292"
+                    ],
+                    [
+                        "#404040",
+                        "#4d6474",
+                        "#376798",
+                        "#005e59",
+                        "#e9a115"
+                    ],
+                    [
+                        "#404040",
+                        "#4d6474",
+                        "#376798",
+                        "#005e59",
+                        "#e9a115",
+                        "#ba8111"
+                    ],
+                    [
+                        "#404040",
+                        "#4d6474",
+                        "#008580",
+                        "#005e59",
+                        "#e9a115",
+                        "#DB0011",
+                        "#4e3a7c"
+                    ],
+                    [
+                        "#404040",
+                        "#4d6474",
+                        "#008580",
+                        "#005e59",
+                        "#e9a115",
+                        "#DB0011",
+                        "#4e3a7c",
+                        "#376798"
+                    ],
+                    [
+                        "#404040",
+                        "#4d6474",
+                        "#008580",
+                        "#005e59",
+                        "#e9a115",
+                        "#DB0011",
+                        "#4e3a7c",
+                        "#376798",
+                        "#003466"
+                    ],
+                    [
+                        "#404040",
+                        "#4d6474",
+                        "#008580",
+                        "#005e59",
+                        "#e9a115",
+                        "#DB0011",
+                        "#4e3a7c",
+                        "#376798",
+                        "#003466",
+                        "#1087ef"
+                    ],
+                    [
+                        "#404040",
+                        "#4d6474",
+                        "#008580",
+                        "#005e59",
+                        "#e9a115",
+                        "#DB0011",
+                        "#4e3a7c",
+                        "#376798",
+                        "#003466",
+                        "#1087ef",
+                        "#0c62ae"
+                    ],
+                    [
+                        "#404040",
+                        "#4d6474",
+                        "#008580",
+                        "#005e59",
+                        "#e9a115",
+                        "#DB0011",
+                        "#4e3a7c",
+                        "#376798",
+                        "#003466",
+                        "#1087ef",
+                        "#0c62ae",
+                        "#3b7522"
+                    ],
+                    [
+                        "#404040",
+                        "#4d6474",
+                        "#008580",
+                        "#005e59",
+                        "#e9a115",
+                        "#DB0011",
+                        "#4e3a7c",
+                        "#376798",
+                        "#003466",
+                        "#1087ef",
+                        "#0c62ae",
+                        "#3b7522",
+                        "#1b3e02"
+                    ]
+                ]
+            },
+            {
+                "name": "HSBC palette 120",
+                "translation": "HSBC palette 120",
+                "propertyValue": "data-palette-3",
+                "type": "row",
+                "scale": [
+                    "#4d6474",
+                    "#3e505d",
+                    "#008580",
+                    "#005e69",
+                    "#e9a115",
+                    "#ba8111",
+                    "#4e3a7c",
+                    "#262362",
+                    "#3b7522",
+                    "#1b3e02",
+                    "#1087ef",
+                    "#0c62ae",
+                    "#DB0011",
+                    "#93000a",
+                    "#404040",
+                    "#d0d0ce",
+                    "#f8e08e",
+                    "#a9dc92",
+                    "#c2deea",
+                    "#d7a9e3",
+                    "#99c867",
+                    "#e43cd0",
+                    "#e2402a",
+                    "#66a8db",
+                    "#3f1a20",
+                    "#e5aa87",
+                    "#3c6b59",
+                    "#aa2a6b",
+                    "#e9b02e",
+                    "#7864dd",
+                    "#65e93c",
+                    "#5ce4ba",
+                    "#d0e0da",
+                    "#d796dd",
+                    "#64487b",
+                    "#e4e72b",
+                    "#6f7330",
+                    "#932834",
+                    "#ae6c7d",
+                    "#986717",
+                    "#e3cb70",
+                    "#408c1d",
+                    "#dd325f",
+                    "#533d1c",
+                    "#2a3c54",
+                    "#db7127",
+                    "#72e3e2",
+                    "#e2c1da",
+                    "#d47555",
+                    "#7d7f81",
+                    "#54ae9b",
+                    "#e9daa6",
+                    "#3a8855",
+                    "#5be66e",
+                    "#ab39a4",
+                    "#a6e332",
+                    "#6c469d",
+                    "#e39e51",
+                    "#4f1c42",
+                    "#273c1c",
+                    "#aa972e",
+                    "#8bb32a",
+                    "#bdeca5",
+                    "#63ec9b",
+                    "#9c3519",
+                    "#aaa484",
+                    "#72256d",
+                    "#4d749f",
+                    "#9884df",
+                    "#e590b8",
+                    "#44b62b",
+                    "#ad5792",
+                    "#c65dea",
+                    "#e670ca",
+                    "#e38783",
+                    "#29312d",
+                    "#6a2c1e",
+                    "#d7b1aa",
+                    "#b1e7c3",
+                    "#cdc134",
+                    "#9ee764",
+                    "#56b8ce",
+                    "#2c6323",
+                    "#65464a",
+                    "#b1cfea",
+                    "#3c7481",
+                    "#3a4e96",
+                    "#6493e1",
+                    "#db5656",
+                    "#747259",
+                    "#bbabe4",
+                    "#e33f92",
+                    "#d0607d",
+                    "#759f79",
+                    "#9d6b5e",
+                    "#8574ae",
+                    "#7e304c",
+                    "#ad8fac",
+                    "#4b77de",
+                    "#647e17",
+                    "#b9c379",
+                    "#8da8b0",
+                    "#b972d9",
+                    "#786279",
+                    "#7ec07d",
+                    "#916436",
+                    "#2d274f",
+                    "#dce680",
+                    "#759748",
+                    "#dae65a",
+                    "#459c49",
+                    "#b7934a",
+                    "#51c671",
+                    "#9ead3f",
+                    "#969a5c",
+                    "#b9976a",
+                    "#46531a",
+                    "#c0f084",
+                    "#76c146",
+                    "#bad0ad"
+                ]
+            }
+        ],
+        "ui": [
+            {
+                "name": "Palette",
+                "colors": [
+                    "#DB0011",
+                    "#93000a",
+                    "#4d6474",
+                    "#3e505d",
+                    "#008580",
+                    "#005e69",
+                    "#e9a115",
+                    "#ba8111",
+                    "#4e3a7c",
+                    "#262362",
+                    "#3b7522",
+                    "#1b3e02",
+                    "#1087ef",
+                    "#0c62ae",
+                    "#404040",
+                    "#929292",
+                    "#000000"
+                ]
+            }
+        ]
+    },
+    "scales": [
+        {
+            "name": "HSBC Red Gradient",
+            "translation": "HSBC Red Gradient",
+            "propertyValue": "sg_1",
+            "type": "gradient",
+            "scale": [
+                "#6f0008",
+                "#e54d58"
+            ]
+        },
+        {
+            "name": "HSBC Blue Gradient",
+            "translation": "HSBC Blue Gradient",
+            "propertyValue": "sg_2",
+            "type": "gradient",
+            "scale": [
+                "#0a5394",
+                "#3b9cf1"
+            ]
+        },
+        {
+            "name": "HSBC Green Gradient",
+            "translation": "HSBC Green Gradient",
+            "propertyValue": "sg_3",
+            "type": "gradient",
+            "scale": [
+                "#004f4b",
+                "#269792"
+            ]
+        },
+        {
+            "name": "HSBC Sequential Classes",
+            "translation": "HSBC Sequential Classes",
+            "propertyValue": "sc_1",
+            "type": "class",
+            "scale": [
+                "#DB0011",
+                "#008580"
+            ]
+        },
+        {
+            "name": "HSBC Diverging Gradient",
+            "translation": "HSBC Diverging Gradient",
+            "propertyValue": "dg",
+            "type": "gradient",
+            "scale": [
+                "#DB0011",
+                "#e9a115",
+                "#1087ef",
+                "#4e3a7c",
+                "#1b3e02"
+            ]
+        },
+        {
+            "name": "HSBC Diverging Classes",
+            "translation": "HSBC Diverging Classes",
+            "propertyValue": "dc",
+            "type": "class",
+            "scale": [
+                "#0c62ae",
+                "#008580",
+                "#93000a"
+            ]
+        }
+    ]
+}
